@@ -7,7 +7,7 @@
     "build:sass": "node-sass src/style.scss src/style.css",
     "build:sass:watch": "node-sass src/style.scss src/style.css -w",
     "build:watch": "tsc -p src/ -w",
-    "serve": "lite-server -c=bs-config.json",
+    "serve": "lite-server -c=bs-config.js",
     "prestart": "npm run build",
     "start": "concurrently \"npm run build:watch\" \"npm run build:sass:watch\" \"npm run serve\"",
     "pretest": "npm run build",
