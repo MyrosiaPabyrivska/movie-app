@@ -1,0 +1,365 @@
+$title-color: #369;
+@import url(//fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('app/fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lato Semibold';
+  src: url('app/fonts/Lato-Semibold.ttf');
+}
+
+h1 {
+  color: $title-color;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+
+section {
+  width: 100%;
+  padding: 10% 15% 0;
+  box-sizing: border-box;
+  font-family: 'Lato Regular';
+
+  &.top-section {
+    padding: 0;
+    min-height: 10vh;
+  }
+  &.full-width {
+    padding: 0;
+    min-height: 40vh;
+  }
+
+  &:last-of-type {
+    padding-bottom: 10%;
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  &.right {
+    text-align: right;
+  }
+
+  &.separator {
+    padding-bottom: 10%;
+    border-bottom: 1px solid rgba(0,144,0,0.4);
+  }
+}
+
+.service {
+  min-height: 20rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+  > div {
+    display: inline-block;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.3s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(1.1);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.6;
+    background-color: #333333;
+  }
+
+  &.american-gangster:before {
+    background-image: url('app/content/assets/images/movie-covers/american-gangster.jpg');
+  }
+  &.ant-man:before {
+    background-image: url('app/content/assets/images/movie-covers/ant-man.jpg');
+  }
+  &.bad-boys:before {
+    background-image: url('app/content/assets/images/movie-covers/bad-boys.jpg');
+  }
+  &.bridge-of-spies:before {
+    background-image: url('app/content/assets/images/movie-covers/bridge-of-spies.jpg');
+  }
+  &.apis-guru:before {
+    background-image: url('app/content/assets/images/movie-covers/bad-boys.jpg');
+  }
+  &.deadpool:before {
+    background-image: url('app/content/assets/images/movie-covers/deadpool.jpg');
+  }
+  &.fast-and-furious-7:before {
+    background-image: url('app/content/assets/images/movie-covers/fast-and-furious-7.jpg');
+  }
+  &.gangster-squad:before {
+    background-image: url('app/content/assets/images/movie-covers/gangster-squad.jpg');
+  }
+  &.gridiron-gang:before {
+    background-image: url('app/content/assets/images/movie-covers/gridiron-gang.jpg');
+  }
+  &.jurassic-world:before {
+    background-image: url('app/content/assets/images/movie-covers/jurassic-world.jpg');
+  }
+  &.legend:before {
+    background-image: url('app/content/assets/images/movie-covers/legend.jpg');
+  }
+  &.mission-impossible-rogue-nation:before {
+    background-image: url('app/content/assets/images/movie-covers/mission-impossible-rogue-nation.jpg');
+  }
+  &.now-you-see-me:before {
+    background-image: url('app/content/assets/images/movie-covers/now-you-see-me.jpg');
+  }
+  &.project-x:before {
+    background-image: url('app/content/assets/images/movie-covers/project-x.jpg');
+  }
+  &.running-scared:before {
+    background-image: url('app/content/assets/images/movie-covers/running-scared.jpg');
+  }
+  &.sicario:before {
+    background-image: url('app/content/assets/images/movie-covers/sicario.jpg');
+  }
+  &.southpaw:before {
+    background-image: url('app/content/assets/images/movie-covers/southpaw.jpg');
+  }
+  &.spectre:before {
+    background-image: url('app/content/assets/images/movie-covers/spectre.jpg');
+  }
+  &.straight-outta-compton:before {
+    background-image: url('app/content/assets/images/movie-covers/straight-outta-compton.jpg');
+  }
+  &.the-dark-knight:before {
+    background-image: url('app/content/assets/images/movie-covers/the-dark-knight.jpg');
+  }
+  &.the-hangover:before {
+    background-image: url('app/content/assets/images/movie-covers/the-hangover.jpg');
+  }
+  &.the-man-from-uncle:before {
+    background-image: url('app/content/assets/images/movie-covers/the-man-from-uncle.jpg');
+  }
+  &.the-matrix:before {
+    background-image: url('app/content/assets/images/movie-covers/the-matrix.jpg');
+  }
+  &.the-tournament:before {
+    background-image: url('app/content/assets/images/movie-covers/the-tournament.jpg');
+  }
+  &.tracers:before {
+    background-image: url('app/content/assets/images/movie-covers/tracers.jpg');
+  }
+  &.we-are-the-millers:before {
+    background-image: url('app/content/assets/images/movie-covers/we-are-the-millers.jpg');
+  }
+
+  header {
+    height: 18rem;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 18rem;
+
+    svg {
+      width: 40%;
+      height: 18rem;
+    }
+  }
+
+  .description {
+    font-weight: normal;
+    font-size: 1.4rem;
+    margin-top: 4rem;
+    color: white;
+  }
+
+  .wrap {
+    position: relative;
+    z-index: 1;
+    width: 20rem;
+    margin: 5rem 0;
+    display: inline-block;
+  }
+}
+
+.one-third {
+  width: 100%;
+  float: left;
+
+  @media (min-width: 750px) {
+    width: 33.333%;
+  }
+}
+
+input,
+button,
+.SearchBox:before {
+  padding: .35em .75em;
+  border: none;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+/* LAYOUT */
+.field {
+  display: flex;
+}
+
+.searchBox-query {
+  // Shrink and grow as needed, but never shrink so
+  // small that we can't read the placeholder
+  flex: 1 0 8em;
+}
+
+.searchBox-submitBtn {
+  // Never shrink or grow
+  flex: 0 0 auto;
+}
+
+.field--is-search:before {
+  // Don't shrink or grow and use a default size
+  flex: 0 0 2.75em;
+
+  // Use flexbox to center the icon
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* VISUAL DESIGN DETAILS */
+.searchBox {
+  margin: 3rem auto 0;
+  max-width: 80%;
+}
+
+.field--is-search:before {
+  border-radius: 2px 0 0 2px;
+  background: #ccc;
+
+  font-family: 'FontAwesome';
+  font-weight: normal;
+  font-style: normal;
+  color: #797979;
+
+  content: "\f002";
+}
+
+.searchBox-query {
+  background: #e9e9e9;
+
+  // Make sure the placeholder isn't poorly cut off
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.searchBox-query:focus {
+  background: white;
+}
+
+.searchBox-submitBtn {
+  border-radius: 0 2px 2px 0;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #797979;
+}
+
+.searchBox-submitBtn:hover, .searchBox-submitBtn:active {
+  background-color: #797979;
+  color: #cccccc;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.movie-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInFromLeft;
+
+  .movie-img {
+    flex-basis: 0;
+    align-self: center;
+    margin-right: 20px;
+  }
+
+  .movie-description {
+    font-family: 'Lato Regular';
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    label {
+      font-family: 'Lato Semibold';
+    }
+  }
+
+  .movie-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h3 {
+      margin-right: 10px;
+    }
+    .movie-name {
+      flex-basis: 0;
+      align-self: flex-start;
+    }
+
+    .rating {
+      flex-basis: 0;
+      color: gold;
+    }
+  }
+}
+
+#back-button:before {
+  content: "\f177";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  /*--adjust as necessary--*/
+  color: #000;
+  font-size: 18px;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+

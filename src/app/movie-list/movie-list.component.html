@@ -1,0 +1,16 @@
+<section class="top-section">
+  <div class="field field--is-search">
+    <input class="searchBox-query" placeholder="Type film name..." id="#searchMovie" [(ngModel)]="searchMovie">
+    <button class="searchBox-submitBtn" (click)="onSearch()">Search</button>
+  </div>
+</section>
+
+<section class="full-width services">
+  <div class="container u-full-width" *ngFor="let movie of movies" (click)="onSelect(movie)">
+    <div class="one-third service {{movie.key}}">
+      <div class="wrap">
+        <div class="description">{{movie.name}}</div>
+      </div>
+    </div>
+  </div>
+</section>
