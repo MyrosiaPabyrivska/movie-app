@@ -309,6 +309,10 @@ button,
   animation-iteration-count: 1;
   animation-name: slideInFromLeft;
 
+  @media (max-width: 999px) {
+    flex-direction: column;
+  }
+
   .movie-img {
     flex-basis: 0;
     align-self: center;
